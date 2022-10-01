@@ -1,1 +1,11 @@
-pytest==6.2.5
+black
+mkdocs
+mkdocs-build-plantuml-plugin
+mkdocs-material
+mkdocstrings[python]
+mypy
+pre-commit
+pytest
+pytest
+pytest-cov
+shellcheck-py
