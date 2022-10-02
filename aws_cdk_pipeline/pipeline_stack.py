@@ -34,7 +34,8 @@ class PipelineStack(Stack):
                     input=source,
                     commands = [ 'npm install -g aws-cdk',
                            'pip install -r pinned_requirements.txt',
-                           'pytest unittests', 'cdk synth',]
+                           'pytest tests', 
+                           'cdk synth',]
                     )
     
 
