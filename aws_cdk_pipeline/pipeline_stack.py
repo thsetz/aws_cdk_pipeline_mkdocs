@@ -34,6 +34,7 @@ class PipelineStack(Stack):
     synth_step = pipelines.ShellStep("Synth", 
                     input=source,
                     commands = [ 'npm install -g aws-cdk',
+                           'pip install --upgrade pip',
                            'pip install -r pinned_requirements.txt',
                            'pytest tests', 
                            'cdk synth',]
