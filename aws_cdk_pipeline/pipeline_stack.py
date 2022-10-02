@@ -28,7 +28,7 @@ class PipelineStack(Stack):
  
     source = pipelines.CodePipelineSource.git_hub(f'{REPOSITORY_OWNER}/{REPOSITORY}', 'master', 
           #authentication = SecretValue.secrets_manager(REPOSITORY_SECRET_NAME_IN_SECRETS_MANAGER),
-          authentication = SecretValue.secrets_manager("github-access-token-secret3"),
+          authentication = SecretValue.secrets_manager("github-access-token-secret2"),
          )
     
     synth_step = pipelines.ShellStep("Synth", 
